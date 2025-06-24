@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    
+<header>
+
+    <div style="text-align: center;">
+          <h1 style="color: rgb(255, 77, 0);">CALCULATOR</h1>
+    </div>
+
+</header> 
+
+<main>   
+
+<div class="calculator">
+    <div class="display">
+        <input type="text" id="display" style="text-align: end; font-size: 40px;" disabled>
+    </div>
+
+    <div class="buttons">
+       
+        <button class="btn" onclick="currentDisplay+='7'; document.querySelector('#display').value=currentDisplay;">7</button>
+        <button class="btn" onclick="currentDisplay+='8'; document.querySelector('#display').value=currentDisplay;">8</button>
+        <button class="btn" onclick="currentDisplay+='9'; document.querySelector('#display').value=currentDisplay;">9</button>
+        <button class="btn-operator" onclick="currentDisplay+='÷'; document.querySelector('#display').value=currentDisplay;">÷</button>
+        
+        <button class="btn" onclick="currentDisplay+='4'; document.querySelector('#display').value=currentDisplay;">4</button>
+        <button class="btn" onclick="currentDisplay+='5'; document.querySelector('#display').value=currentDisplay;">5</button>
+        <button class="btn" onclick="currentDisplay+='6'; document.querySelector('#display').value=currentDisplay;">6</button>
+        <button class="btn-operator" onclick="currentDisplay+='*'; document.querySelector('#display').value=currentDisplay;">*</button>
+        
+        <button class="btn" onclick="currentDisplay+='1'; document.querySelector('#display').value=currentDisplay;">1</button>
+        <button class="btn" onclick="currentDisplay+='2'; document.querySelector('#display').value=currentDisplay;">2</button>
+        <button class="btn" onclick="currentDisplay+='3'; document.querySelector('#display').value=currentDisplay;">3</button>
+        <button class="btn-operator" onclick="currentDisplay+='-'; document.querySelector('#display').value=currentDisplay;">-</button>
+        
+         <button class="btn" onclick="currentDisplay =''; document.querySelector('#display').value=currentDisplay;">C</button>
+        <button class="btn zero" onclick="currentDisplay+='0'; document.querySelector('#display').value=currentDisplay;">0</button>
+        <button class="btn-operator" onclick="currentDisplay=eval(currentDisplay);
+            document.querySelector('#display').value=currentDisplay;">  =
+        </button>
+        <button class="btn-operator" onclick="currentDisplay+='+'; document.querySelector('#display').value=currentDisplay;">+</button>
+    </div>
+</div>
+
+</main>
+
+<script src="calc.js"></script>
+
+</body>
+</html>
